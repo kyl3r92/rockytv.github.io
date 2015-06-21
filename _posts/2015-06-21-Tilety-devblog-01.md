@@ -13,7 +13,9 @@ if (descendantNode.Name == "properties" && descendantNode.Parent == mapNode)
 {
 	foreach (XElement propertyElem in descendantNode.Descendants())
 	{
-		this.Properties.Add(propertyElem.GetAttributeValue("name"), propertyElem.GetAttributeValue("value"));
+		this.Properties.Add(
+		propertyElem.GetAttributeValue("name"), 
+		propertyElem.GetAttributeValue("value"));
 	}
 }
 {% endhighlight %}
@@ -21,30 +23,33 @@ if (descendantNode.Name == "properties" && descendantNode.Parent == mapNode)
 I have this:
 
 {% highlight csharp %}
-// Properties
-                            if (descendantNode.Name == "properties")
-                            {
-                                switch (descendantNode.Parent.Name.ToString())
-                                {
-                                    case "map":
-                                        foreach (XElement propertyElem in descendantNode.Descendants())
-                                        {
-                                            this.Properties.Add(propertyElem.GetAttributeValue("name"), propertyElem.GetAttributeValue("value"));
-                                        }
-                                        break;
-                                    case "layer":
-                                        if (tmxLayer != null)
-                                        {
-                                            foreach (XElement propertyElem in descendantNode.Descendants())
-                                            {
-                                                tmxLayer.Properties.Add(propertyElem.GetAttributeValue("name"), propertyElem.GetAttributeValue("value"));
-                                            }
-                                        }
-                                        break;
-                                    default:
-                                        break;
-                                }
-                            }
+if (descendantNode.Name == "properties")
+{
+	switch (descendantNode.Parent.Name.ToString())
+	{
+		case "map":
+			foreach (XElement propertyElem in descendantNode.Descendants())
+			{
+				this.Properties.Add(
+				propertyElem.GetAttributeValue("name"), 
+				propertyElem.GetAttributeValue("value"));
+			}
+			break;
+		case "layer":
+			if (tmxLayer != null)
+			{
+				foreach (XElement propertyElem in descendantNode.Descendants())
+				{
+					tmxLayer.Properties.Add(
+					propertyElem.GetAttributeValue("name"), 
+					propertyElem.GetAttributeValue("value"));
+				}
+			}
+			break;
+		default:
+			break;
+	}
+}
 {% endhighlight %}
 
 I've also implemented support for *.tsx* files. .tsx files are tilesets defined in an external file, and they follow the same format as a tileset element defined in the .tmx file. It was a bit tricky in the start, until I thought of adding a method on the `TmxTileset` class that loads a tileset from an `XDocument` object.
