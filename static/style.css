@@ -83,3 +83,8 @@ a:hover {
 .info .title {
 	font-size: 18px;
 }
+
+code {
+	background-color: #6b6b6b;
+	border-radius: 3px;
+}
