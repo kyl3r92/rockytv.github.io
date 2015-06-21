@@ -1,0 +1,37 @@
+# Name of your site (displayed in the header)
+name: RockyTV's Blog
+description: My personal blog
+
+# Your website URL
+# Used for Sitemap.xml and your RSS feed
+url: http://rockytv.github.io
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name/"
+baseurl: ""
+
+markdown: redcarpet
+highlighter: pygments
+
+permalink: /:categories/:year/:month/:day/:title
+
+github: RockyTV
+
+timezone: America/Sao_Paulo
+encoding: utf-8
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "general"
+
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

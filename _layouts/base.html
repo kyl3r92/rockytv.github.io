@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<meta charset="{{ site.encoding }}">
+		<title>{{ site.name }}</title>
+		<link rel="stylesheet" href="{{ site.baseurl }}/static/style.css" type="text/css">
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	</head>
+	<body>
+		{% include header.html %}
+		{{ content }}
+		{% include footer.html %}
+	</body>
+</html>
