@@ -4,7 +4,7 @@ title: Hello, world!
 
 Lorem ipsum dolor sit amet
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def show
   @widget = Widget(params[:id])
   respond_to do |format|
@@ -12,4 +12,11 @@ def show
     format.json { render json: @widget }
   end
 end
+{% endhighlight %}
+
+{% highlight c# linenos %}
+public static void Main(string[] args)
+{
+        Console.WriteLine("Hello, world!");
+}
 {% endhighlight %}
