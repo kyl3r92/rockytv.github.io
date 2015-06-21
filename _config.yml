@@ -12,7 +12,9 @@ url: http://rockytv.github.io
 # then add in the baseurl here, like this: "/repository-name/"
 baseurl: ""
 
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: pygments
 
 permalink: /:categories/:year/:month/:day/:title
