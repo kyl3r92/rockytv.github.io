@@ -1,5 +1,6 @@
 ---
 title: Tilety - Devblog 01
+category: duality
 ---
 
 *For those who do not know what Tilety is, it is a [Duality](http://duality.adamslair.net/) plugin that integrates Tiled into the engine.*
