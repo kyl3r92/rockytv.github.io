@@ -7,7 +7,10 @@ category: duality
 
 Today was the most unproductive day for Tilety. All the other days I've worked on Tilety brought big changes to the plugin, but today was a day just for fixing.
 
-I've re-written the way the plugin parses map properties. Instead of checking if the current XML node has a `<properties>` node, I realized that the node is also a descendant of the `<map>` node. It made parsing properties much easier than before. So, instead of having this code block for each descendant node that supports the property node:
+I've re-written the way the plugin parses map properties. Instead of checking if the current XML node has a `<properties>` node, I realized that the node is also a descendant of the `<map>` node. 
+It made parsing properties much easier than before. 
+
+So, instead of having this code block for each descendant node that supports the property node:
 {% highlight csharp %}
 if (descendantNode.Name == "properties" && descendantNode.Parent == mapNode)
 {
