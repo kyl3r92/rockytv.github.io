@@ -7,7 +7,7 @@ body {
 	vertical-align: baseline;
 	background-color: #353535;
 	color: #e5e5e5;
-	font-family: 'Calibri', serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .header h1 {
@@ -85,9 +85,9 @@ a:hover {
 }
 
 code {
-	background-color: rgba(107, 107, 107, 0.25);
+	background-color: rgba(107, 107, 107, 0.5);
 	border-radius: 3px;
-	font-size: 85%;
+	font-size: 95%;
 	padding: 0.2em;
 	margin: 0;
 }

@@ -1,5 +1,5 @@
 ---
-title: Tilety &nbsp;-&nbsp;Devblog 01
+title: Tilety - Devblog 01
 category: duality
 ---
 *For those who do not know what Tilety is, Tilety is a [Duality](http://duality.adamslair.net/) plugin that integrates Tiled maps in Duality.*
