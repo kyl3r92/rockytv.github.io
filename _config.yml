@@ -24,6 +24,9 @@ github: RockyTV
 timezone: America/Sao_Paulo
 encoding: utf-8
 
+# HighlightJS style
+highlightjs_style: railscasts
+
 defaults:
   -
     scope:

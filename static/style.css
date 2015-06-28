@@ -95,3 +95,7 @@ code {
 .hljs {
 	font-size: 100%;
 }
+
+.rss-icon {
+    float: right;
+}
