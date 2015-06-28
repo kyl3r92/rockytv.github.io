@@ -20,7 +20,7 @@ body {
 	vertical-align: middle;
 	margin: 0 auto;
 	position: relative;
-	display: block;
+	display: flex;
 }
 
 h2 {
