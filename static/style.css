@@ -20,7 +20,7 @@ body {
 	vertical-align: middle;
 	margin: 0 auto;
 	position: relative;
-	display: inline;
+	display: block;
 }
 
 h2 {
@@ -98,4 +98,7 @@ code {
 
 .rss-icon {
     float: right;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
 }
