@@ -1,13 +1,14 @@
 <html>
 	<head>
 		<meta charset="{{ site.encoding }}">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 		<title>{{ site.name }}</title>
         <link rel='stylesheet' href='{{ site.baseurl }}/static/style.css' type='text/css'/>
-        <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/{{ site.highlightjs_style }}.min.css' type='text/css'/>
-        <link rel='stylesheet' href='http://necolas.github.io/normalize.css/latest/normalize.css' type='text/css'/>
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family={{ site.google-font }}' type='text/css'/>
+        <link rel='stylesheet' href='{{ site.baseurl }}/static/hljs/styles/{{ site.highlightjs_style }}.css' type='text/css'/>
+        <link rel='stylesheet' href='{{ site.baseurl }}/static/normalize.css' type='text/css'/>
+        <link rel='stylesheet' href='{{ site.baseurl }}/static/font/ubuntu.css' type='text/css'/>
         <link rel='alternate' href='{{ site.baseurl }}/feed.xml' type='application/rss+xml' title="{{ site.name }} - {{ site.description }}"/>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+		<script src="{{ site.baseurl }}/static/hljs/highlight.pack.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 		<!-- Piwik -->
 		<script type="text/javascript">
