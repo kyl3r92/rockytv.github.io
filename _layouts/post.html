@@ -1,10 +1,26 @@
 ---
 layout: base
 ---
-<h2>{{ page.title }}</h2>
-
-<div class="container-post">
-	<div class="article">
-		{{ content }}
-	</div>
+<div class="container">
+    <div class="card">
+        <div class="card-content black-text">
+            <p class="card-title">
+                <span class="post-title">{{ page.title }}</span>
+            </p>
+            <div class="card-description">
+            {{ content }}
+            </div>
+        </div>
+        <div class="card-action">
+            <a class="btn waves-effect waves-light gpbtn white-text" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <span>Google+</span>
+            </a>
+            <a class="btn waves-effect waves-light fbbtn white-text" href="https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <span>Facebook</span>
+            </a>
+            <a class="btn waves-effect waves-light twitterbtn white-text" href="https://twitter.com/intent/tweet?text={{ site.name }} - {{ page.title }}&url={{ site.url }}{{ page.url }}">
+                <span>Twitter</span>
+            </a>
+        </div>
+    </div>
 </div>

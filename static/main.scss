@@ -1,0 +1,129 @@
+
+@import 'sass/materialize';
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+    .card {
+        .card-title {
+            .post-date {
+                font-size: 0.5em;
+            }
+        }
+    }
+}
+
+body {
+    background-color: #e5e5e5;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.tabs {
+    width: 100% !important;
+    background-color: $primary-color;
+    color: #fff;
+    .indicator {
+        background-color: $secondary-color;
+    }
+}
+
+.card {
+    color: #000;
+    p, ul {
+        opacity: .7;
+    }
+    .card-content {
+        .card-description {
+            .post-info {
+                font-size: 1.125em;
+                font-weight: 300;
+                padding-bottom: 16px;
+                span {
+                    display: block;
+                }
+            }
+            padding: 0 1em;
+            p {
+                padding: 0.5em 0;
+            }
+            ul {
+                font-weight: normal;
+                padding: 0 1.5em;
+                list-style: initial;
+                list-style-type: disc !important;
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+    .card-title {
+        font-weight: 500;
+    }
+}
+
+.btn {
+    margin-bottom: 16px;
+}
+
+.card-action {
+    text-align: center;
+    i {
+        margin-right: 0.25em;
+    }
+}
+
+.contact {
+    i {
+        opacity: .7;
+    }
+}
+
+.pagination {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.gpbtn {
+    @extend .red;
+}
+
+.fbbtn {
+    @extend .light-blue, .darken-4; 
+}
+
+.twitterbtn {
+    @extend .light-blue, .darken-2;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.copyright-text {
+    span {
+        display: block;
+        opacity: .9;
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}
+
+code {
+    background-color: rgba(107, 107, 107, 0.5);
+    border-radius: 2px;
+    font-size: 0.85em;
+    padding: 0.1em 0.2em;
+    margin: 0 !important;
+}

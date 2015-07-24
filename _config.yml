@@ -25,10 +25,13 @@ timezone: America/Sao_Paulo
 encoding: utf-8
 
 # HighlightJS style
-highlightjs_style: railscasts
+highlightjs_style: obsidian
 
 # Google Fonts API font
 google-font: Ubuntu
+
+paginate: 5
+paginate_path: "/page:num/"
 
 defaults:
   -
@@ -38,6 +41,7 @@ defaults:
     values:
       layout: "post"
       category: "general"
+      author: "Alexandre Oliveira"
 
 
 # Use the following plug-ins
