@@ -10495,16 +10495,19 @@ body {
 main {
   flex: 1 0 auto; }
 
-/* line 113, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
-.copyright-text span {
-  display: block;
-  opacity: .9; }
-  /* line 116, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
-  .copyright-text span a {
-    color: inherit;
-    text-decoration: underline; }
+/* line 112, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
+.copyright-text {
+  padding-bottom: 16px; }
+  /* line 113, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
+  .copyright-text span {
+    display: block;
+    opacity: .9; }
+    /* line 116, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
+    .copyright-text span a {
+      color: inherit;
+      text-decoration: underline; }
 
-/* line 123, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
+/* line 124, C:/Users/rocky/Documents/GitHub/rockytv.github.io/static/main.scss */
 code {
   background-color: rgba(107, 107, 107, 0.5);
   border-radius: 2px;
