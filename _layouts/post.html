@@ -13,12 +13,15 @@ layout: base
         </div>
         <div class="card-action">
             <a class="btn waves-effect waves-light gpbtn white-text" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <i class="fa fa-google-plus-square fa-lg left"></i>
                 <span>Google+</span>
             </a>
-            <a class="btn waves-effect waves-light fbbtn white-text" href="https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+            <a class="btn waves-effect waves-light fbbtn white-text tooltipped" data-position="top" data-delay="50" href="https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <i class="fa fa-facebook-square fa-lg left"></i>
                 <span>Facebook</span>
             </a>
-            <a class="btn waves-effect waves-light twitterbtn white-text" href="https://twitter.com/intent/tweet?text={{ site.name }} - {{ page.title }}&url={{ site.url }}{{ page.url }}">
+            <a class="btn waves-effect waves-light twitterbtn white-text tooltipped" data-position="top" data-delay="50" data-tooltip="abc" href="https://twitter.com/intent/tweet?text={{ page.title | xml_escape }} - {{ site.name | xml_escape }}&url={{ site.url }}{{ page.url }}">
+                <i class="fa fa-twitter-square fa-lg left"></i>
                 <span>Twitter</span>
             </a>
         </div>
@@ -43,3 +46,34 @@ layout: base
         </div>
     </div>
 </div>
+
+<script>
+    function format(n){
+        var rx=  /(\d+)(\d{3})/;
+        return String(n).replace(/^\d+/, function(w){
+            while(rx.test(w)){
+                w= w.replace(rx, '$1,$2');
+            }
+            return w;
+        });
+    }
+    // Update button badge text
+    var element = document.querySelector('.twitterbtn');
+    if (element != null) {
+        $.getJSON("http://cors.io/?u=http://urls.api.twitter.com/1/urls/count.json?url={{ site.url }}{{ page.url }}", function(data) {
+            element.setAttribute('data-tooltip', format(data.count) + ' tweets');
+            console.log("updated tooltip");
+        });
+    }
+    
+    var element2 = document.querySelector('.fbbtn');
+    if (element2 != null) {
+        $.getJSON("http://graph.facebook.com/?id={{ site.url }}{{ page.url }}", function(data) {
+            if (data.shares != null) {
+                element2.setAttribute('data-tooltip', format(data.shares) + ' shares');
+            } else {
+                element2.setAttribute('data-tooltip', '0 shares');
+            }
+        });
+    }
+</script>
