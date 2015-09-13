@@ -1,13 +1,16 @@
 /*** Colors ***/
-$primary-color: color("custom", "base") !default;
+//$primary-color: color("light-blue", "base") !default;
+$primary-color: color("orange", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("custom", "accent-1") !default;
-$secondary-color-light: lighten($secondary-color, 15%) !default;
+//$secondary-color: #F98802 !default;
+//$secondary-color: color("deep-orange", "base") !default;
+$secondary-color: #0068B2 !default;
+$secondary-color-light: #0094FF !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+$link-color: $secondary-color-light !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
@@ -27,7 +30,7 @@ $button-line-height: 36px !default;
 /*** Cards ***/
 $card-padding: 20px !default;
 $card-bg-color: #fff !default;
-$card-link-color: color("custom", "accent-1") !default;
+$card-link-color: color("orange", "accent-2") !default;
 $card-link-color-light: lighten($card-link-color, 20%) !default;
 
 /*** Collapsible ***/
@@ -41,8 +44,8 @@ $dropdown-hover-bg-color: #eee !default;
 $dropdown-color: $secondary-color !default;
 
 /*** Fonts ***/
-$roboto-font-path: "../static/fonts/roboto/" !default;
-$icons-font-path: "../static/fonts/material-design-icons/" !default;
+$roboto-font-path: "../font/roboto/" !default;
+$icons-font-path: "../font/material-design-icons/" !default;
 
 /*** Forms ***/
 // Text Inputs + Textarea

@@ -1,5 +1,9 @@
+---
+---
+@import 'materialize/materialize';
 
-@import 'sass/materialize';
+$primary-text: rgba(0, 0, 0, .87);
+$secondary-text: rgba(0, 0, 0, .54);
 
 @media screen and (max-width: 960px) {
     .container {
@@ -23,12 +27,22 @@ body {
     flex-direction: column;
 }
 
+nav {
+    box-shadow: none !important;
+}
+
 .container {
     max-width: 960px;
 }
 
+header {
+    background-color: $primary-color;
+    //box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
 .tabs {
-    width: 100% !important;
+    //max-width: 960px !important;
+    width: 100%;
     background-color: $primary-color;
     color: #fff;
     .indicator {
@@ -37,24 +51,40 @@ body {
 }
 
 .card {
-    color: #000;
+    color: $primary-text;
     p, ul {
-        opacity: .7;
+        opacity: .87;
     }
     .card-content {
         .card-description {
+            
             .post-info {
-                font-size: 1.125em;
-                font-weight: 300;
-                padding-bottom: 16px;
+                color: $secondary-text;
+                padding: 0em;
+                display: block;
+                font-size: 0.8em;
+                line-height: normal;
                 span {
-                    display: block;
+                    padding-right: 16px;
+                    padding-bottom: 16px;
                 }
+                i {
+                    vertical-align: middle;
+                    padding: 8px 4px 8px 0px;
+                }
+                margin: 0.25em 0;
             }
-            padding: 0 1em;
+            
+            .divider {
+                padding: 0 !important; 
+                margin: 0 !important;
+                width: 100% !important;
+            } 
+            
             p {
-                padding: 0.5em 0;
+                padding: 0.5em 0em;
             }
+            
             ul {
                 font-weight: normal;
                 padding: 0 1.5em;
@@ -84,7 +114,7 @@ body {
 
 .contact {
     i {
-        opacity: .7;
+        color: $secondary-text;
     }
 }
 
@@ -109,13 +139,16 @@ main {
     flex: 1 0 auto;
 }
 
+//$cp-link-color: color("deep-orange", "darken-1");
+$cp-link-color: #d6d6d6;
+
 .copyright-text {
     span {
         display: block;
-        opacity: .9;
+        opacity: 1;
         a {
-            color: inherit;
-            text-decoration: underline;
+            color: #ddd;
+            text-decoration: underline; 
         }
     }
     padding-bottom: 16px;
@@ -127,4 +160,12 @@ code {
     font-size: 0.85em;
     padding: 0.1em 0.2em;
     margin: 0 !important;
+}
+
+.sidebar {
+    text-align: left !important;
+}
+
+.black-text {
+    color: $primary-text !important;
 }

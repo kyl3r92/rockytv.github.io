@@ -12,6 +12,8 @@ url: http://rockytv.github.io
 # then add in the baseurl here, like this: "/repository-name/"
 baseurl: ""
 
+bitcoin: 1LMECMFV92dXPvABYztbxwqf1VMi9D6R4E
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -47,6 +49,7 @@ defaults:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed
   
 exclude:
   - README.md
