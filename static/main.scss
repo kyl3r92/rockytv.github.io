@@ -71,6 +71,13 @@ header {
                 i {
                     vertical-align: middle;
                     padding: 8px 4px 8px 0px;
+                    -webkit-user-select: none; /* Chrome/Safari */        
+                    -moz-user-select: none; /* Firefox */
+                    -ms-user-select: none; /* IE10+ */
+
+                    /* Rules below not implemented in browsers yet */
+                    -o-user-select: none;
+                    user-select: none;
                 }
                 margin: 0.25em 0;
             }

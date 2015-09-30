@@ -1,22 +1,27 @@
+<!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Blog">
 
 <head>
     <meta charset="{{ site.encoding }}">
+    <meta name="theme-color" content="#ff9800">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <meta property='og:title' content='{% if page.title | xml_escape %}{{ page.title | xml_escape }} · {{ site.name | xml_escape }}{% else %}{{ site.name | xml_escape }}{% endif %}'>
-    <meta property='og:description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | xml_escape }}{% else %}{{ site.description }}{% endif %}'>
-    <meta property='description' content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | xml_escape }}{% else %}{{ site.description }}{% endif %}'>
-    <meta property='author' content='Alexandre Oliveira'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel='canonical' href='{{ site.url }}'>
-    <link rel='stylesheet' href='{{ site.baseurl }}/static/css/material.css' type='text/css'>
-    <script type='text/javascript' src='{{ site.baseurl }}/static/js/jquery.min.js'></script>
-    <script type='text/javascript' src='{{ site.baseurl}}/static/js/materialize/bin/materialize.min.js'></script>
-    <link rel='stylesheet' href='{{ site.baseurl}}/static/sass/materialize.css' type='text/css' media='screen,projection'>
-    <link rel='stylesheet' href='{{ site.baseurl }}/static/main.css' type='text/css'>
-    <link rel='stylesheet' href='{{ site.baseurl }}/static/css/hljs/{{ site.highlightjs_style }}.css' type='text/css'>
-    <link rel='stylesheet' href='{{ site.baseurl }}/static/css/font-awesome.min.css' type='text/css'> {% feed_meta %}
-    <script type='text/javascript' src='{{ site.baseurl }}/static/js/highlight.pack.js'></script>
+    <meta property="og:title" content="{% if page.title | xml_escape %}{{ page.title | xml_escape }} · {{ site.name | xml_escape }}{% else %}{{ site.name | xml_escape }}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | xml_escape }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | xml_escape }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="author" content="Alexandre Oliveira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{ site.url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/material.css" type="text/css">
+    <script type="text/javascript" src="{{ site.baseurl }}/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl}}/static/js/materialize/bin/materialize.min.js"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/main.css" type="text/css" media="screen,projection">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/hljs/{{ site.highlightjs_style }}.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/font-awesome.min.css" type="text/css"> 
+    {% feed_meta %}
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="192x192" href="{{ site.baseurl }}/favicon.png">
+    <script type="text/javascript" src="{{ site.baseurl }}/static/js/highlight.pack.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
