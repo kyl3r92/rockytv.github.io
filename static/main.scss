@@ -177,3 +177,12 @@ code {
 .black-text {
     color: $primary-text !important;
 }
+
+.link-nostyle {
+    color: $primary-text !important;
+}
+
+img {
+    max-width: 960px;
+    width: 600px;
+}

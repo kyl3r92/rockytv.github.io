@@ -62,6 +62,8 @@ layout: base
     if (element != null) {
         $.getJSON("http://cors.io/?u=http://urls.api.twitter.com/1/urls/count.json?url={{ site.url }}{{ page.url }}", function (data) {
             element.setAttribute('data-tooltip', format(data.count) + ' tweets');
+        }).fail(function() {
+            element.setAttribute('data-tooltip', '0 tweets');
         });
     }
 

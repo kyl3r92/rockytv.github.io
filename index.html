@@ -17,7 +17,8 @@ layout: main
                 <span class="post-categories">Categories: {{ post.categories | array_to_sentence_string }}</span>-->
             </div>
             <div class="divider"></div>
-            <span class="post-excerpt">{{ post.excerpt | truncate: 300, ' ' }}</span> <span><a href="{{ post.url }}">[...]</a></span>
+            <span class="post-excerpt">{% if post.content contains "<!-- more -->" %}{{ post.content | split: "<!-- more -->" | first % }}{% else %}{{ post.excerpt | truncate: 300, ' ' }}{% endif %}</span> 
+            <span><a href="{{ post.url }}">[...]</a></span>
         </div>
     </div>
     <div class="card-action">
