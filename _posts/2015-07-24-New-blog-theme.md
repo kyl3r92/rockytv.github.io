@@ -1,8 +1,8 @@
 ---
 title: New blog theme
 ---
-
 As you may have noticed, the blog has a new face. This new theme has a Material Design look, and follows Google's guidelines on Material Design. All of this was possible due to a framework called <a href="http://materializecss.com">Materialize</a>.
+<!-- more -->
 
 The blog is much cleaner now, and is mobile friendly. It is so pretty that I don't even have words to describe how pretty this new theme is.
 

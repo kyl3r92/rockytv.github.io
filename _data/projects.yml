@@ -1,0 +1,14 @@
+- name: yabpt
+  description: Firefox extension that acts like a Bitcoin price ticker.
+  repository: RockyTV/yabpt
+  language: JavaScript
+  
+- name: duality-tiled
+  description: <a href="http://mapeditor.org/">Tiled</a> integration plugin for <a href="http://duality.adamslair.net/">Duality</a>.
+  repository: RockyTV/duality-tiled
+  language: C#
+  
+- name: duality-git
+  description: A <a href="http://duality.adamslair.net/">Duality</a> plugin that seeks integrating the framework with Git.
+  repository: RockyTV/duality-git
+  language: C#

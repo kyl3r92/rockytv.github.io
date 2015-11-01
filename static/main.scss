@@ -18,6 +18,12 @@ $secondary-text: rgba(0, 0, 0, .54);
     }
 }
 
+.card-content {
+    a:hover {
+        color: $primary-color !important;
+    }
+}
+
 body {
     background-color: #e5e5e5;
     text-align: justify;
@@ -155,7 +161,6 @@ $cp-link-color: #d6d6d6;
         display: block;
         opacity: 1;
         a {
-            color: #ddd;
             text-decoration: underline; 
         }
     }
@@ -185,4 +190,15 @@ code {
 img {
     max-width: 960px;
     width: 600px;
+}
+
+.collapsible-body {
+    p {
+        padding: 0 !important;
+        padding-top: 0.5em !important;
+        padding-left: 0.5em !important;
+    }
+    p:last-child {
+        padding-bottom: 0.5em !important; 
+    }
 }

@@ -1,0 +1,104 @@
+/**
+ * Obsidian style
+ * ported by Alexander Marenin (http://github.com/ioncreature)
+ */
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #263238;
+    -webkit-text-size-adjust: none;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hljs-comment {
+    color: #506E79;
+}
+
+.hljs-keyword {
+    color: rgba(199, 146, 234, 1);
+}
+
+.hljs-keyword-operator {
+    color: rgba(217, 245, 221, 1);
+}
+
+.hljs-template-variable,
+.hljs-variable {
+    color: rgba(255, 83, 112, 1);
+}
+
+.hljs-meta {
+    color: #fff;
+}
+
+.hljs-string {
+    color: #c3e88d;
+}
+
+.hljs-number {
+    color: #f77669;
+}
+
+.hljs-function {
+    color: #82b1ff;
+}
+
+.hljs-params {
+    color: rgba(238, 255, 255, 1);
+}
+
+.hljs-regexp {
+    color: #80cbc4;
+}
+
+.hljs-constant {
+    color: #f77669;
+}
+
+.hljs-template-tag,
+.hljs-tag {
+    color: #80cbc4;
+}
+
+.hljs-section {
+    color: rgba(120, 204, 240, 1);
+}
+
+.hljs-class {
+    color: #ffcb6b;
+}
+
+.hljs-attribute,
+.hljs-attr {
+    color: #c3e88d;
+}
+
+.hljs-addition {
+    color: #f1e655;
+}
+
+.hljs-selection,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attribute {
+    color: rgba(199, 146, 234, 1);
+}
+
+.hljs-function .hljs-title {
+    color: #82b1ff !important;
+}
+
+.hljs-title,
+.hljs-type,
+.hljs-name {
+    color: #ffcb6b;
+}
+
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword {
+    color: #CDD3DE !important;
+}

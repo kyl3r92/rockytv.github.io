@@ -12,8 +12,6 @@ url: https://rockytv.github.io
 # then add in the baseurl here, like this: "/repository-name/"
 baseurl: ""
 
-bitcoin: 1LMECMFV92dXPvABYztbxwqf1VMi9D6R4E
-
 markdown: kramdown
 kramdown:
   input: GFM

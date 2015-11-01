@@ -1,0 +1,5 @@
+- name: Blog RSS Feed
+  url: /feed.xml
+  
+- name: Unturned Server Hosting Guide
+  url: /unturned-server-hosting-guide/

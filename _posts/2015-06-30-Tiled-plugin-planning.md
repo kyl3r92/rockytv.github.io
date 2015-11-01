@@ -3,6 +3,7 @@ title: Tiled plugin planning
 category: duality
 ---
 I have decided to write this blog post to tell about the plans I have for this plugin: what it will do, what features it will have, etc.
+<!-- more -->
 
 I have renamed the plugin to **[DualityTiled](https://github.com/RockyTV/duality-tiled/commit/433ae3815895af868b0e58b505e2c6c6c7df7297)**. It is no longer called Tilety. I have apparently no good reason for this change, but DualityTiled looks better to me.
 

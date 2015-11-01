@@ -3,8 +3,8 @@ layout: post
 title: Plugin development on hold
 category: [duality, general]
 ---
-
 According to my local Tiled plugin repository, the last change happened on August 8. Quite a while, huh? Unfortunately, things will stay the same way they are right now because of an important update that is probably being released this month.
+<!-- more -->
 
 I didn't want to spoil the reason why I stopped developing the Tiled plugin in the excerpt. The reason why I stopped developing it is because Duality 2.0 is almost being released. I believe it is going to be released this month.
 

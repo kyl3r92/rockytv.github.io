@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="{{ site.encoding }}">
-    <meta name="theme-color" content="#ff9800">
+    <meta name="theme-color" content="#212121">
     <meta name="mobile-web-app-capable" content="yes">
     <title>{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
     <meta property="og:title" content="{% if page.title | xml_escape %}{{ page.title | xml_escape }} · {{ site.name | xml_escape }}{% else %}{{ site.name | xml_escape }}{% endif %}">
@@ -16,8 +16,9 @@
     <script type="text/javascript" src="{{ site.baseurl }}/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl}}/static/js/materialize/bin/materialize.min.js"></script>
     <link rel="stylesheet" href="{{ site.baseurl }}/static/main.css" type="text/css" media="screen,projection">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/hljs/{{ site.highlightjs_style }}.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/hljs/obsidian-custom.css" type="text/css">
     <link rel="stylesheet" href="{{ site.baseurl }}/static/css/font-awesome.min.css" type="text/css"> 
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/roboto-mono.css" type="text/css"> 
     {% feed_meta %}
     <link rel="manifest" href="manifest.json">
     <link rel="icon" sizes="192x192" href="{{ site.baseurl }}/favicon.png">
