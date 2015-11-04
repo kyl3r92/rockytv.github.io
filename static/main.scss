@@ -170,8 +170,11 @@ $cp-link-color: #d6d6d6;
 code {
     background-color: rgba(107, 107, 107, 0.5);
     border-radius: 2px;
-    font-size: 0.85em;
-    padding: 0.1em 0.2em;
+    font-size: 0.75em;
+    padding: 0 0.2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    font-family: 'Roboto Mono', monospace;
     margin: 0 !important;
 }
 
@@ -188,8 +191,10 @@ code {
 }
 
 img {
-    max-width: 960px;
-    width: 600px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .collapsible-body {
@@ -201,4 +206,11 @@ img {
     p:last-child {
         padding-bottom: 0.5em !important; 
     }
+}
+
+img + em {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
