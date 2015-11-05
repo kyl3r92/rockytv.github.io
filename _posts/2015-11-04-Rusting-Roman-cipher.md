@@ -8,7 +8,7 @@ Looking for challenges and fun things to do with a programming language, I came 
 As I was looking for an easy task to do in a programming language, I found one that was quite interesting. The objective of the task was to implement a [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) in the language you choose, supporting both encrypting and decrypting.
 
 A Caesar cipher, also known as Caesar's code, is a simple encryption technique named after Julius Caesar, a Roman politician which eventually became the dictator of the Roman Republic.
-It consists of assigning an index to each letter in the alphabet (A gets index 0, B gets, Z gets 25), and then rotating the alphabet left or right by a number:
+It consists of assigning an index to each letter in the alphabet (A gets index 0, B gets 1, Z gets 25), and then rotating the alphabet left or right by a number:
 
 ![]({{ site.baseurl }}/static/images/caesar-table.png){: .center-align}*A table showing the index of A-E for shifts 0-4*
 
