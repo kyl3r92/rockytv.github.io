@@ -12,3 +12,8 @@
   description: A <a href="http://duality.adamslair.net/">Duality</a> plugin that seeks integrating the framework with Git.
   repository: RockyTV/duality-git
   language: C#
+
+- name: rusty
+  description: IRC bot made from scratch, supporting RFC1459.
+  repository: RockyTV/rusty
+  language: Rust
