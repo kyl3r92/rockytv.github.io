@@ -213,3 +213,14 @@ img + em {
     margin-right: auto;
     text-align: center;
 }
+
+.nav-wrapper .icon {
+    display: inline-block;
+    position: absolute;
+    left: 56%;
+    height: 16px !important;
+    color: orange !important;
+    :hover {
+       color: orange !important;
+    }
+}
