@@ -168,14 +168,13 @@ $cp-link-color: #d6d6d6;
 }
 
 code {
-    background-color: rgba(107, 107, 107, 0.5);
+    background-color: #dedede;
     border-radius: 2px;
-    font-size: 0.75em;
-    padding: 0 0.2em;
-    padding-top: 0.1em;
-    padding-bottom: 0.2em;
+    padding: 0px 0.2em;
     font-family: 'Roboto Mono', monospace;
     margin: 0 !important;
+    white-space: pre-wrap;
+    font-size: 0.85em;
 }
 
 .sidebar {
