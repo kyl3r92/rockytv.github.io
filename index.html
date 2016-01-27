@@ -2,29 +2,27 @@
 layout: main
 ---
 {% for post in paginator.posts %}
-<div class="card">
-    <div class="card-content black-text">
-        <p class="card-title">
-            <span class="post-title">{{ post.title }}</span>
-        </p>
-        <div class="card-description">
-            <div class="post-info">
-                <!--<span><i class="material-icons tiny prefix">assignment_ind</i>{{ post.author }}</span>-->
-                <span><i class="material-icons tiny prefix">today</i>{{ post.date | date: "%B %d, %Y" }}</span>
-                <span><i class="material-icons tiny prefix">label</i>{{ post.categories | array_to_sentence_string }}</span>
-                <!--<span class="post-date">Posted on {{ post.date | date: '%B %d, %Y' }}</span>
-                <span class="post-author">Author: {{ post.author }}</span>
-                <span class="post-categories">Categories: {{ post.categories | array_to_sentence_string }}</span>-->
+<article class="hentry">
+    <div class="card">
+        <div class="card-content black-text">
+            <p class="card-title entry-title">
+                <span class="post-title">{{ post.title }}</span>
+            </p>
+            <div class="card-description">
+                <div class="post-info">
+                    <span><i class="material-icons tiny prefix">today</i>{{ post.date | date: "%B %d, %Y" }}</span>
+                    <span><i class="material-icons tiny prefix">label</i>{{ post.categories | array_to_sentence_string }}</span>
+                </div>
+                <div class="divider"></div>
+                <span class="post-excerpt entry-summary">{% if post.content contains "<!-- more -->" %}{{ post.content | split: "<!-- more -->" | first % }}{% else %}{{ post.excerpt | truncate: 300, ' ' }}{% endif %}</span> 
+                <span><a href="{{ post.url }}">[...]</a></span>
             </div>
-            <div class="divider"></div>
-            <span class="post-excerpt">{% if post.content contains "<!-- more -->" %}{{ post.content | split: "<!-- more -->" | first % }}{% else %}{{ post.excerpt | truncate: 300, ' ' }}{% endif %}</span> 
-            <span><a href="{{ post.url }}">[...]</a></span>
+        </div>
+        <div class="card-action">
+            <a class="btn waves-effect waves-light right white-text" href="{{ post.url }}"><i class="material-icons left">info_outline</i>Read More</a>
         </div>
     </div>
-    <div class="card-action">
-        <a class="btn waves-effect waves-light right white-text" href="{{ post.url }}"><i class="material-icons left">info_outline</i>Read More</a>
-    </div>
-</div>
+</article>
 {% endfor %}
 
 <div class="pagination-div" style="display: flex; justify-content: center;">
