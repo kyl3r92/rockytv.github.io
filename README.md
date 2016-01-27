@@ -3,4 +3,11 @@
 
 My website hosted on GitHub pages.
 
-**QUICK NOTE:** the external assets I use in the website are hosted on the website itself. My site license is CC4.0, and it does not apply to external assets.
+### Attribution
+
+This blog uses third-party libraries/assets:
+- [jQuery](https://jquery.com/)
+- [highlight.js](https://highlightjs.org/)
+- [Materialize Framework](http://materializecss.com)
+- [Octicons Font by GitHub](https://octicons.github.com/)
+- [Roboto Font by Google](https://www.google.com/fonts/specimen/Roboto)
