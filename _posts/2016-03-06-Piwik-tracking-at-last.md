@@ -2,6 +2,7 @@
 title: Piwik tracking, at last
 ---
 I took the rest of the night today to take care of my blog. Since my old WordPress blog hosted in Germany wasn't being used anymore, I decided to completely abandon it and migrate the blog posts to here.
+<!-- more -->
 
 I was thinking of migrating the blog posts, and changing the Google Analytics tracking to Piwik for quite some time already. The only problem was that I never had real desire to do it, it was just a thought. But as the server I was using is now being used to host [SpaceDock](https://spacedock.info) (a KerbalStuff replacement), I decided it was time to move away from it, and so I did it.
 
