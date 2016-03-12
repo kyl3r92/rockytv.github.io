@@ -143,8 +143,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-redirect-from
   jekyll-sitemap
   nokogiri
 
 BUNDLED WITH
-   1.10.4
+   1.10.5

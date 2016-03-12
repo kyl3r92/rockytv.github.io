@@ -15,7 +15,7 @@ baseurl: ""
 markdown: kramdown
 kramdown:
   input: GFM
-highlighter: pygments
+highlighter: rouge
 
 permalink: /:categories/:year/:month/:day/:title
 
@@ -48,6 +48,7 @@ defaults:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed
+  - jekyll-redirect-from
   
 exclude:
   - README.md

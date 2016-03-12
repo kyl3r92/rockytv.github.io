@@ -2,6 +2,7 @@
 layout: post
 title: Unturned 3.0 Server Hosting Guide
 permalink: /unturned-server-hosting-guide/
+redirect_from: /unturned/setting-up-an-unturned-3.0-server/
 ---
 
 ***DISCLAIMER: this guide is for hosting an Unturned 3.0 server on Windows only.***
