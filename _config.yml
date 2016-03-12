@@ -49,6 +49,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-paginate
   
 exclude:
   - README.md
