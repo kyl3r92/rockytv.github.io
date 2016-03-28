@@ -19,8 +19,6 @@ highlighter: rouge
 
 permalink: /:categories/:year/:month/:day/:title
 
-github: RockyTV
-
 timezone: America/Sao_Paulo
 encoding: utf-8
 
