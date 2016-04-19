@@ -3,11 +3,6 @@
   repository: RockyTV/yabpt
   language: JavaScript
   
-- name: duality-tiled
-  description: <a href="http://mapeditor.org/">Tiled</a> integration plugin for <a href="http://duality.adamslair.net/">Duality</a>.
-  repository: RockyTV/duality-tiled
-  language: C#
-  
 - name: duality-git
   description: A <a href="http://duality.adamslair.net/">Duality</a> plugin that seeks integrating the framework with Git.
   repository: RockyTV/duality-git
@@ -17,3 +12,13 @@
   description: IRC bot made from scratch, supporting RFC1459.
   repository: RockyTV/rusty
   language: Rust
+  
+- name: dicepyware
+  decription: A simple program that generates secure random passphrases for you.
+  repository: RockyTV/dicepyware
+  language: Python
+  
+- name: hortus
+  description: Small garden soil moisture utility made with Arduino.
+  repository: RockyTV/hortus
+  language: C/Arduino
