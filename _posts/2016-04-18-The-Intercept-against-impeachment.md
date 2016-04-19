@@ -32,6 +32,7 @@ Listing the facts above, one can clearly see that the impeachment is not the **p
 > [...]
 > 
 > 10) raise funds by way of tax or contribution of revenue anticipation whose taxable event has not yet occurred; [(Included by Law No. 10.028, 2000)](http://www.planalto.gov.br/ccivil_03/leis/L10028.htm#art3)
+>
 > 11) order or authorize the allocation of funds from the issuance of bonds for purpose other than the law that authorized; [(Included by Law No. 10.028, 2000)](http://www.planalto.gov.br/ccivil_03/leis/L10028.htm#art3)
 >
 > [...]
