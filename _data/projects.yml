@@ -14,7 +14,7 @@
   language: Rust
   
 - name: dicepyware
-  decription: A simple program that generates secure random passphrases for you.
+  description: A simple program that generates secure random passphrases for you.
   repository: RockyTV/dicepyware
   language: Python
   
