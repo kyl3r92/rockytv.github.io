@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /CNAME
+Disallow: /cibuild.sh
+Disallow: /publickey.txt
+Disallow: /README.md
+Disallow: /LICENSE
