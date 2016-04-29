@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/xinayder
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.olivalex.tech
+  * I am xinayder (https://keybase.io/xinayder) on keybase.
+  * I have a public key with fingerprint BE02 A82D 8F6D D1D1 DB4E  D70D 321D 9BBE 6382 6D5B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01015d1a53c9e5758eade77706de34fd981b1a97b396eedc12b6396b2f801781b2740a",
+            "fingerprint": "be02a82d8f6dd1d1db4ed70d321d9bbe63826d5b",
+            "host": "keybase.io",
+            "key_id": "321d9bbe63826d5b",
+            "kid": "01015d1a53c9e5758eade77706de34fd981b1a97b396eedc12b6396b2f801781b2740a",
+            "uid": "c3063d0b30dcaeadbc4dfd756dc23519",
+            "username": "xinayder"
+        },
+        "service": {
+            "hostname": "blog.olivalex.tech",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1461968880,
+    "expire_in": 157680000,
+    "prev": "2d8f291286d8d466aa917891d25b6a59f934835d8cfe3e77d90c06413ae1b09d",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUm1QVFUY3l2D4kvQiYBmwZkbTjPAbPf7Y9V1hBqCkhp/CMbIeu89Z9kb6971
+3uUrpGIDUSmRJFQsU0QrHTOZEsiJaorvLQzBIYqwZrBBZIY0RzOQzmXsXz8758c5
+532f5znP+867P2qZyWImE490yYHt+ebBacmU+8TkYgUmqaAcs1dgRXDpgB4Adb+z
+SAGYHcMJnGAAITKULECGY3goAshxHM4CSNEuIPCERIgCJ1ECCyGQCVJi0VUiXTxO
+cChJcjQuYmmYS/EWQs2nKV4/kpUgToo8CXgXCwCBtkRDwOGAIgkgSBJkKZ5kASMh
+olvVDQYyJ4k6tCkqiqGHc8nef+D/Z9/FS3IyhbMUwCUKB7KIpCSZBi7AMSyQSYoh
+BAOoQ80rbocIXaZ4xXIANawyDUPREkWGRmONSh4gJI9aaFM9SonogWU2P5TdSMGn
+qX5VVj0o7/b7fbrd4PvLfQahFErOB1JOSfEC1E3EKIGarqhezE4gpOxXDG2CZgmB
+5XkeT8NgmU/RoFMxEAzH8jhaxj+wBEmSBaj9pECQPAt4QLOsKAqodIEAJCOxIiO4
+BIrmKQbwsgtSqHlAwGWcpQlKhISECwAzqtvhVTE7iXyKhUhTVwq9or9Yg1hl+B6L
+9SGT2WIKDbEYc2YKD4v5d/he1KLvp7i+TIvCZp5v0jbUFRyLOOi6NnLukRMbOsnT
+l7Pb8Cmha3RmeWxi7tNE32iD2KTdeLg2XsFOH/sJu5v4XMdLKU5Ysc68bT7TS//8
+PXnjtYlZtakFO1GU2TgZmpddPDLS8kLMpnHdfpHp2zv/R07keM8+LIucu/XZbCC1
++mrVYvqVo9WBzuTW/oYG06cjh4SGlY1NVROO7nhXIxEy9tZT32XF6WabkND7S++q
+1N3NeSnWXVOxoxHpH1XdtrYNC/cWB/Ccw5/kHz86pc13MWzD9MK8X8/NXP3VnG3F
+is0BqxiZMBn9ZKt+qb52YOssvNof2lzlvjbr+ObrHaJnqr2uoPRAxPFNNYccA0Or
+nuk7eHflzl0nkxbCswNB+5reP6tuSs2DYZ6OuN+Ccx9YsgfOcJaPrR/uTJKThw7/
+vT9r9wWp5o3J0h/dHUekc1+Mn18/VD9/63b3lpio8q1/uWHlmum9w5dPtg23OeLd
+b9+TNz77+Np2a9KjeZ2BtuiEuozH6tafrTmQXO/oWH09v/p6y1Q/P9b+6ufjF9jI
+2DvFcZlxV9yXaps9oUPiu3ROke+scN4RXGjftnbPm4Uvz+bf6basO9Mj5y5f9krj
+RbF18NTy9GCQmNz4q2Au9oVlxKfK95O3zGX2zPR1V38bTCDfpzPeef2ULTk+u/G9
+6dKJzeHDP4SMEb/f/Ac=
+=INaH
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xinayder
+
+==================================================================
