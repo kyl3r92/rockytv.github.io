@@ -1,7 +1,7 @@
 ---
 ---
 {
-  "name": "{{ site.name }}",
+  "name": "{{ site.title }}",
   "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait"
