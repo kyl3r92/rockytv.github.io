@@ -1,5 +1,5 @@
 # Name of your site (displayed in the header)
-name: RockyTV's Blog
+title: RockyTV's Blog
 description: My personal blog
 
 # Your website URL
@@ -22,12 +22,6 @@ permalink: /:categories/:year/:month/:day/:title
 timezone: America/Sao_Paulo
 encoding: utf-8
 
-# HighlightJS style
-highlightjs_style: obsidian
-
-# Google Fonts API font
-google-font: Ubuntu
-
 paginate: 5
 paginate_path: "/page:num/"
 
@@ -41,14 +35,16 @@ defaults:
       category: "general"
       author: "Alexandre Oliveira"
 
+google_verification: OunS_FdLz8HtdYFQXhkTM39yh8xWT3csgOFe312zEn0
+
 
 # Use the following plug-ins
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-paginate
-  
+
 exclude:
   - README.md
   - Rakefile
