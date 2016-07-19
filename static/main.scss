@@ -63,7 +63,7 @@ header {
     }
     .card-content {
         .card-description {
-            
+
             .post-info {
                 color: $secondary-text;
                 padding: 0em;
@@ -77,7 +77,7 @@ header {
                 i {
                     vertical-align: middle;
                     padding: 8px 4px 8px 0px;
-                    -webkit-user-select: none; /* Chrome/Safari */        
+                    -webkit-user-select: none; /* Chrome/Safari */
                     -moz-user-select: none; /* Firefox */
                     -ms-user-select: none; /* IE10+ */
 
@@ -87,17 +87,17 @@ header {
                 }
                 margin: 0.25em 0;
             }
-            
+
             .divider {
-                padding: 0 !important; 
+                padding: 0 !important;
                 margin: 0 !important;
                 width: 100% !important;
-            } 
-            
+            }
+
             p {
                 padding: 0.5em 0em;
             }
-            
+
             ul {
                 font-weight: normal;
                 padding: 0 1.5em;
@@ -111,6 +111,7 @@ header {
     }
     .card-title {
         font-weight: 500;
+        text-align: initial;
     }
 }
 
@@ -141,7 +142,7 @@ header {
 }
 
 .fbbtn {
-    @extend .light-blue, .darken-4; 
+    @extend .light-blue, .darken-4;
 }
 
 .twitterbtn {
@@ -165,7 +166,7 @@ $cp-link-color: #d6d6d6;
         display: block;
         opacity: 1;
         a {
-            text-decoration: underline; 
+            text-decoration: underline;
         }
     }
     padding-bottom: 16px;
@@ -207,7 +208,7 @@ img {
         padding-left: 0.5em !important;
     }
     p:last-child {
-        padding-bottom: 0.5em !important; 
+        padding-bottom: 0.5em !important;
     }
 }
 
