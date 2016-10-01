@@ -1,0 +1,88 @@
+---
+layout: hacktoberfest
+title: Hacktoberfest Progress
+---
+<p>You can check your progress on <a href='https://hacktoberfest.digitalocean.com/#details' target='_blank'>2016's Hacktoberfest event</a>. Just type in your username and you'll get a list of valid Pull Requests that you have made.</p>
+<p>To be able to get the free t-shirt, you must have submitted 4 pull requests by October 31.</p>
+<br><hr><br>
+<div class='row'>
+  <form class='col s12' id='hacktober' action='#'>
+    <div class='input-field col s6'>
+      <i class="material-icons prefix">account_circle</i>
+      <input placeholder='GitHub Username' name='github_user' id='github_user' type='text' class='validate'>
+      <label for='github_user'>GitHub Username</label>
+    </div>
+    <div class='input-field col s6'>
+      <button class='btn waves-effect waves-light' type='submit' name='action'>
+        Check
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </form>
+</div>
+
+<div class='hacktober-result'>
+  <div class='collection hacktober-collection' style='text-align: initial !important;'>
+  </div>
+</div>
+
+<script>
+  var pr_count = 0;
+  $('form').submit(function(evt) {
+    // Clean up
+    $('.hacktober-result .hacktober-collection').empty();
+    $('.hacktober-result p').remove();
+    pr_count = 0;
+
+    var arr = $(this).serializeArray();
+
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].name == 'github_user') {
+
+        var username = arr[i].value;
+
+        if (username) {
+          $.getJSON('https://api.github.com/users/' + username + '/events/public')
+            .done(function(json) {
+              for (var j = 0; j < json.length; j++) {
+                var github_event = json[j];
+                if (github_event.type == 'PullRequestEvent') {
+                  var payload = github_event.payload;
+                  var repo = github_event.repo;
+
+                  var startDate = new Date(2016, 9, 1, 0, 0, 0);
+                  var endDate = new Date(2016, 9, 31, 23, 59, 59);
+                  var createdDate = new Date(github_event.created_at);
+
+                  var action = payload.action;
+
+                  if ((startDate < createdDate && createdDate < endDate) && action == 'opened' && github_event.public) {
+                    pr_count += 1;
+
+                    var pr = payload.pull_request;
+                    var elem = document.createElement('a');
+                    elem.className = 'collection-item';
+                    elem.href = pr.html_url;
+                    elem.target = '_blank';
+                    elem.appendChild(document.createTextNode(pr.title + ' (' + repo.name + ' #' + payload.number + ')'));
+
+                    $('.hacktober-result .hacktober-collection').append(elem);
+                  }
+                }
+              }
+              var helperText = pr_count >= 1 ? 'You have submitted {0} pull {1}' : "You haven't submitted a pull request yet :(";
+              helperText = helperText.replace('{0}', pr_count).replace('{1}', (pr_count == 1 ? 'request' : 'requests'));
+
+              var elem = document.createElement('p');
+              elem.appendChild(document.createTextNode(helperText));
+
+              $('.hacktober-result').prepend(elem);
+
+            });
+        }
+      }
+    }
+    evt.preventDefault();
+    evt.stopImmediatePropagation();
+  });
+</script>
