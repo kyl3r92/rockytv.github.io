@@ -42,33 +42,21 @@ title: Hacktoberfest Progress
         var username = arr[i].value;
 
         if (username) {
-          $.getJSON('https://api.github.com/users/' + username + '/events/public')
+          $.getJSON('https://api.github.com/search/issues?q=created:2016-09-30T00:00:00-12:00..2016-10-31T23:59:59-12:00+type:pr+is:public+author:' + username)
             .done(function(json) {
-              for (var j = 0; j < json.length; j++) {
-                var github_event = json[j];
-                if (github_event.type == 'PullRequestEvent') {
-                  var payload = github_event.payload;
-                  var repo = github_event.repo;
+              pr_count = json.total_count;
+              for (var j = 0; j < json.items.length; j++) {
+                var item = json.items[j];
+                var elem = document.createElement('a');
 
-                  var startDate = new Date(2016, 9, 1, 0, 0, 0);
-                  var endDate = new Date(2016, 9, 31, 23, 59, 59);
-                  var createdDate = new Date(github_event.created_at);
+                elem.className = 'collection-item';
+                elem.href = item.html_url;
+                elem.target = '_blank';
+                elem.appendChild(document.createTextNode(
+                  item.repository_url.replace('https://api.github.com/repos/', '') + ' #' + item.number + ' - ' + item.title + ' (' + item.state + ')'
+                ));
 
-                  var action = payload.action;
-
-                  if ((startDate < createdDate && createdDate < endDate) && action == 'opened' && github_event.public) {
-                    pr_count += 1;
-
-                    var pr = payload.pull_request;
-                    var elem = document.createElement('a');
-                    elem.className = 'collection-item';
-                    elem.href = pr.html_url;
-                    elem.target = '_blank';
-                    elem.appendChild(document.createTextNode(pr.title + ' (' + repo.name + ' #' + payload.number + ')'));
-
-                    $('.hacktober-result .hacktober-collection').append(elem);
-                  }
-                }
+                $('.hacktober-result .hacktober-collection').append(elem);
               }
               var helperText = pr_count >= 1 ? 'You have submitted {0} pull {1}' : "You haven't submitted a pull request yet :(";
               helperText = helperText.replace('{0}', pr_count).replace('{1}', (pr_count == 1 ? 'request' : 'requests'));
