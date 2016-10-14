@@ -1,0 +1,13 @@
+<a class="btn-floating btn-large waves-effect waves-light gpbtn white-text" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+    <i class="fa fa-google-plus"></i>
+</a>
+<a class="btn-floating btn-large waves-effect waves-light fbbtn white-text" href="https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+    <i class="fa fa-facebook-f"></i>
+</a>
+<a class="btn-floating btn-large waves-effect waves-light twitterbtn white-text" href="https://twitter.com/intent/tweet?text={{ page.title | xml_escape }}&url={{ site.url | uri_escape }}{{ page.url | uri_escape}}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i>
+</a>
+
+<a class="btn-floating btn-large waves-effect waves-light redditbtn white-text" href="https://reddit.com/submit?title={{ page.title | xml_escape }} - {{ site.title | xml_escape }}&url={{ site.url | uri_escape }}{{ page.url | uri_escape}}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=540,width=960');return false;">
+    <i class="fa fa-reddit-alien"></i>
+</a>

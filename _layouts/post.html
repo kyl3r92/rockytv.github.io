@@ -12,18 +12,21 @@ layout: base
             </div>
         </div>
         <div class="card-action">
-            <a class="btn waves-effect waves-light gpbtn white-text" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                <span>Google+</span>
-            </a>
-            <a class="btn waves-effect waves-light fbbtn white-text tooltipped" data-position="top" data-delay="50" href="https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                <span>Facebook</span>
-            </a>
-            <a class="btn waves-effect waves-light twitterbtn white-text tooltipped" data-position="top" data-delay="50" data-tooltip="abc" href="https://twitter.com/intent/tweet?text={{ page.title | xml_escape }}&url={{ site.url | uri_escape }}{{ page.url | uri_escape}}" onclick="javascript:window:open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                <span>Twitter</span>
-            </a>
-            <a class="btn waves-effect waves-light diasporabtn white-text" href="https://sharetodiaspora.github.io/?title={{ page.title | xml_escape }}&url={{ site.url | uri_escape }}{{ page.url | uri_escape}}&jump=doclose" onclick="javascript:window:open(this.href, 'das', 'location=no,links=no,scrollbars=no,toolbar=no,menubar=no,height=550,width=620');return false;">
-                <span>Diaspora*</span>
-            </a>
+            {% include social.html %}
+        </div>
+        <div class="post-nav">
+          {% if page.previous.url %}
+          <div class="prev">
+              <a class="btn-floating waves-effect waves-light" href="{{ page.previous.url }}"><i class="material-icons tiny left">chevron_left</i></a>
+              <span>Previous Post<span>
+          </div>
+          {% endif %}
+          {% if page.next.url %}
+          <div class="next">
+              <span>Next Post<span>
+              <a class="btn-floating waves-effect waves-light" href="{{ page.next.url }}"><i class="material-icons tiny right">chevron_right</i></a>
+          </div>
+          {% endif %}
         </div>
     </div>
     <div class="card">
@@ -47,38 +50,4 @@ layout: base
             </div>
         </div>
     </div>
-
-    <script>
-        function format(n) {
-            var rx = /(\d+)(\d{3})/;
-            return String(n).replace(/^\d+/, function (w) {
-                while (rx.test(w)) {
-                    w = w.replace(rx, '$1,$2');
-                }
-                return w;
-            });
-        }
-        // Update button badge text
-        var element = document.querySelector('.twitterbtn');
-        if (element != null) {
-            $.getJSON("http://cors.io/?u=http://urls.api.twitter.com/1/urls/count.json?url={{ site.url }}{{ page.url }}", function (data) {
-                element.setAttribute('data-tooltip', format(data.count) + ' tweets');
-            }).fail(function() {
-                element.setAttribute('data-tooltip', '0 tweets');
-            });
-        }
-
-        var element2 = document.querySelector('.fbbtn');
-        if (element != null) {
-            $.getJSON("http://graph.facebook.com/?id={{ site.url }}{{ page.url }}", function (data) {
-                if (data.shares != null) {
-                    element2.setAttribute('data-tooltip', format(data.shares) + ' shares');
-                } else {
-                    element2.setAttribute('data-tooltip', '0 shares');
-                }
-            }).fail(function() {
-                element2.setAttribute('data-tooltip', '0 shares');
-            });
-        }
-    </script>
 </article>

@@ -37,6 +37,8 @@ defaults:
 
 google_verification: OunS_FdLz8HtdYFQXhkTM39yh8xWT3csgOFe312zEn0
 
+sass:
+  style: compressed
 
 # Use the following plug-ins
 gems:

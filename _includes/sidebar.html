@@ -1,38 +1,6 @@
 <section>
     <div class="card sidebar">
         <div class="card-content black-text">
-            <span class="card-title black-text">Categories</span>
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header">General</div>
-                    <div class="collapsible-body">
-                        {% for post in site.categories.general %}
-                        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-                        {% endfor %}
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header">Duality</div>
-                    <div class="collapsible-body">
-                        {% for post in site.categories.duality %}
-                        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-                        {% endfor %}
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header">Programming</div>
-                    <div class="collapsible-body">
-                        {% for post in site.categories.programming %}
-                        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-                        {% endfor %}
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card sidebar">
-        <div class="card-content black-text">
             <span class="card-title black-text">Useful Pages</span>
             {% for resource in site.data.resources %}
             <p><a href="{{ site.baseurl }}{{ resource.url }}">{{ resource.name }}</a></p>

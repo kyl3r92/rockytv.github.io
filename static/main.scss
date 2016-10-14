@@ -102,7 +102,7 @@ header {
                 font-weight: normal;
                 padding: 0 1.5em;
                 list-style: initial;
-                list-style-type: disc !important;
+                list-style-type: disc;
                 li {
                     list-style-type: disc;
                 }
@@ -149,8 +149,8 @@ header {
     @extend .light-blue, .darken-2;
 }
 
-.diasporabtn {
-    @extend .grey, .darken-2
+.redditbtn {
+    @extend .deep-orange, .darken-3;
 }
 
 main {
@@ -243,5 +243,20 @@ img + em {
             padding-right: 10px;
         }
         list-style: none !important;
+    }
+}
+
+.post-nav {
+    display: flex;
+    justify-content: space-around;
+    //font-size: 0.8em;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 20px;
+
+    .prev span {
+        padding-left: 5px;
+    }
+    .next span {
+        padding-left: 5px;
     }
 }
