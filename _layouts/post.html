@@ -7,8 +7,16 @@ layout: base
             <p class="card-title entry-title">
                 <span class="post-title">{{ page.title }}</span>
             </p>
-            <div class="card-description entry-content">
-                {{ content }}
+            <div class="card-description">
+                {% if page.date %}
+                <div class="post-info">
+                    <span><i class="material-icons tiny prefix">today</i>{{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+                <div class="divider"></div>
+                {% endif %}
+                <div class="entry-content">
+                    {{ content }}
+                </div>
             </div>
         </div>
         <div class="card-action">

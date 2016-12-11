@@ -10,7 +10,7 @@ layout: main
             </p>
             <div class="card-description">
                 <div class="post-info">
-                    <span><i class="material-icons tiny prefix">today</i>{{ post.date | date: "%B %d, %Y" }}</span>
+                    <span><i class="material-icons tiny prefix">today</i>{{ post.date | date: "%B %-d, %Y" }}</span>
                     <span><i class="material-icons tiny prefix">label</i>{{ post.categories | array_to_sentence_string }}</span>
                 </div>
                 <div class="divider"></div>
