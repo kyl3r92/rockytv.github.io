@@ -69,36 +69,18 @@
     <main>
         <div id="home">
             <div class="container">
-                <div class="row hide-on-med-and-down">
-                    <div class="col l12">
-                      <article class="hentry">
-                          <div class="card">
-                              <div class="card-content black-text">
-                                  <p class="card-title entry-title">
-                                      <span class="post-title">{{ page.title }}</span>
-                                  </p>
-                                  <div class="card-description entry-content">
-                                      {{ content }}
-                                  </div>
-                              </div>
-                          </div>
-                      </article>
+                <article class="hentry">
+                    <div class="card">
+                        <div class="card-content black-text">
+                            <p class="card-title entry-title">
+                                <span class="post-title">{{ page.title }}</span>
+                            </p>
+                            <div class="card-description entry-content">
+                                {{ content }}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="hide-on-large-only">
-                  <article class="hentry">
-                      <div class="card">
-                          <div class="card-content black-text">
-                              <p class="card-title entry-title">
-                                  <span class="post-title">{{ page.title }}</span>
-                              </p>
-                              <div class="card-description entry-content">
-                                  {{ content }}
-                              </div>
-                          </div>
-                      </div>
-                  </article>
-                </div>
+                </article>
             </div>
         </div>
         <div id="about">

@@ -34,6 +34,18 @@ defaults:
       layout: "post"
       category: "general"
       author: "Alexandre Oliveira"
+  -
+    scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "page"
+      author: "Alexandre Oliveira"
+
+collections:
+  guides:
+    permalink: guides/:path/
+    output: true
 
 google_verification: OunS_FdLz8HtdYFQXhkTM39yh8xWT3csgOFe312zEn0
 
@@ -46,6 +58,7 @@ gems:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-coffeescript
 
 exclude:
   - README.md
