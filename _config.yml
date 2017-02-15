@@ -34,6 +34,7 @@ defaults:
       layout: "post"
       category: "general"
       author: "Alexandre Oliveira"
+      social: true
   -
     scope:
       path: ""
@@ -41,6 +42,7 @@ defaults:
     values:
       layout: "page"
       author: "Alexandre Oliveira"
+      social: true
 
 collections:
   guides:

@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<article class="hentry">
+<article class="post">
     <div class="card">
         <div class="card-content black-text">
             <p class="card-title entry-title">
@@ -19,9 +19,12 @@ layout: base
                 </div>
             </div>
         </div>
+        {% if page.social %}
         <div class="card-action">
             {% include social.html %}
         </div>
+        {% endif %}
+        {% if page.previous or page.next %}
         <div class="post-nav">
           {% if page.previous.url %}
           <div class="prev">
@@ -36,26 +39,9 @@ layout: base
           </div>
           {% endif %}
         </div>
+        {% endif %}
     </div>
-    <div class="card">
-        <div class="card-content black-text">
-            <div class="card-description">
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES * * */
-                    var disqus_shortname = 'rockytv';
-
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function () {
-                        var dsq = document.createElement('script');
-                        dsq.type = 'text/javascript';
-                        dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-            </div>
-        </div>
-    </div>
+    {% if page.social %}
+    {% include disqus.html %}
+    {% endif %}
 </article>
