@@ -47,7 +47,8 @@ collections:
     permalink: guides/:path/
     output: true
 
-google_verification: OunS_FdLz8HtdYFQXhkTM39yh8xWT3csgOFe312zEn0
+webmaster_verification:
+  google: OunS_FdLz8HtdYFQXhkTM39yh8xWT3csgOFe312zEn0
 
 sass:
   style: compressed
