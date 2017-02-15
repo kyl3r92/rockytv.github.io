@@ -62,13 +62,4 @@ gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-coffeescript
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
+  - jekyll-seo-tag
