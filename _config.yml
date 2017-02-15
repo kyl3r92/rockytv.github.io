@@ -1,10 +1,10 @@
 # Name of your site (displayed in the header)
-title: RockyTV's Blog
-description: My personal blog
+title: const fn
+description: Unproductive blog posts about technology
 
 # Your website URL
 # Used for Sitemap.xml and your RSS feed
-url: https://blog.olivalex.tech
+url: https://rockytv.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -51,6 +51,9 @@ google_verification: OunS_FdLz8HtdYFQXhkTM39yh8xWT3csgOFe312zEn0
 
 sass:
   style: compressed
+  
+disqus: rockytv
+piwik: true
 
 # Use the following plug-ins
 gems:
