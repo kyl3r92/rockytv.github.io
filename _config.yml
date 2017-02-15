@@ -55,6 +55,7 @@ sass:
   
 disqus: rockytv
 piwik: true
+repository: RockyTV/rockytv.github.io
 
 # Use the following plug-ins
 gems:
