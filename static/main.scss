@@ -1,5 +1,9 @@
 ---
 ---
+@import 'materialize/components/color';
+$card-link-color: color("pink", "accent-2") !default;
+$link-color: color("pink", "darken-1") !default;
+
 @import 'materialize/materialize';
 
 $primary-text: rgba(0, 0, 0, .87);
@@ -16,6 +20,31 @@ $secondary-text: rgba(0, 0, 0, .54);
             }
         }
     }
+    /*
+  .post {
+  .card {
+    .card-action {
+      .social {
+  
+  .post-nav {
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 20px;
+    .content {
+  */
+  .post {
+    .card {
+      .card-action {
+        .social {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+  .post-nav {
+    .content {
+      max-width: 100% !important;
+    }
+  }
 }
 
 .card-content {
@@ -24,9 +53,13 @@ $secondary-text: rgba(0, 0, 0, .54);
     }
 }
 
+html {
+    line-height: 1.6;
+}
+
 body {
     background-color: #e5e5e5;
-    text-align: justify;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
     display: flex;
     min-height: 100vh;
@@ -70,10 +103,9 @@ header {
                 display: block;
                 font-size: 0.8em;
                 line-height: normal;
-                span {
-                    padding-right: 16px;
-                    padding-bottom: 16px;
-                }
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: space-between;
                 i {
                     vertical-align: middle;
                     padding: 8px 4px 8px 0px;
@@ -84,8 +116,17 @@ header {
                     /* Rules below not implemented in browsers yet */
                     -o-user-select: none;
                     user-select: none;
+                  .tiny {
+                    font-size: 1.25rem !important;
+                  }
                 }
                 margin: 0.25em 0;
+                span:last-child {
+                    padding-left: 8px;
+                }
+                span:only-child {
+                    padding-left: 0px;
+                }
             }
 
             .divider {
@@ -95,7 +136,7 @@ header {
             }
 
             p {
-                padding: 0.5em 0em;
+                padding: 0 0 0.5em 0em;
             }
 
             ul {
@@ -134,7 +175,6 @@ header {
 
 .pagination {
     text-align: center;
-    padding-bottom: 32px;
 }
 
 .gpbtn {
@@ -219,17 +259,6 @@ img + em {
     text-align: center;
 }
 
-.nav-wrapper .icon {
-    display: inline-block;
-    position: absolute;
-    left: 56%;
-    height: 16px !important;
-    color: orange !important;
-    :hover {
-       color: orange !important;
-    }
-}
-
 .footer-small-text {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.54);
@@ -247,20 +276,36 @@ img + em {
 }
 
 .post-nav {
-    display: flex;
-    justify-content: space-around;
-    //font-size: 0.8em;
     border-top: 1px solid rgba(160,160,160,0.2);
     padding: 20px;
-
-    .prev span {
-        padding-left: 5px;
-    }
-    .next span {
-        padding-left: 5px;
+    .content {
+      max-width: 50%;
+      display: flex;
+      justify-content: space-around;
+      //font-size: 0.8em;
+      margin: auto;
+      .prev span {
+          padding-left: 5px;
+      }
+      .next span {
+          padding-left: 5px;
+      }
     }
 }
 
 h6 {
     font-size: 1.32rem;
+}
+
+.post {
+  .card {
+    .card-action {
+      .social {
+        max-width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+      }
+    }
+  }
 }

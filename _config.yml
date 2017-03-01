@@ -35,6 +35,7 @@ defaults:
       category: "general"
       author: "Alexandre Oliveira"
       social: true
+      excerpt_separator: "<!-- more -->"
   -
     scope:
       path: ""

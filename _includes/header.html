@@ -1,14 +1,34 @@
 <header class="z-depth-1">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="{{ site.baseurl}}/" class="brand-logo center">{{ site.title }}</a>
-            <span class="icon hide-on-med-and-down"><a href="{{ site.baseurl }}/feed.xml"><i class="material-icons">rss_feed</i></a></span>
-        </div>
-    </nav>
-    <div class="container">
-        <ul class="tabs" id="navigation">
-            <li class="tab"><a class="active" href="#home">Home</a></li>
-            <li class="tab"><a href="#about">About</a></li>
-        </ul>
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="{{ site.url }}" class="brand-logo">{{ site.title }}</a>
+      <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {% for entry in site.data.topnav.topnav %}
+        {% for item in entry.items %}
+        {% if item.external_url %}
+        <li><a href="{{ item.external_url }}" target="_blank">{{ item.title }}</a></li>
+        {% elsif page.url contains item.url %}
+        <li class="active"><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% else %}
+        <li><a href="{{ item.url}}">{{ item.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </ul>
+      <ul id="mobile-nav" class="side-nav">
+        {% for entry in site.data.topnav.topnav %}
+        {% for item in entry.items %}
+        {% if item.external_url %}
+        <li><a href="{{ item.external_url }}" target="_blank">{{ item.title }}</a></li>
+        {% elsif page.url contains item.url %}
+        <li class="active"><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% else %}
+        <li><a href="{{ item.url}}">{{ item.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </ul>
     </div>
+  </nav>
 </header>
