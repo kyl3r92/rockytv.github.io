@@ -36,6 +36,8 @@ defaults:
       author: "Alexandre Oliveira"
       social: true
       excerpt_separator: "<!-- more -->"
+      seo:
+        type: "BlogPosting"
   -
     scope:
       path: ""
