@@ -33,7 +33,6 @@ defaults:
     values:
       layout: "post"
       category: "general"
-      author: "Alexandre Oliveira"
       social: true
       excerpt_separator: "<!-- more -->"
       seo:
@@ -44,8 +43,9 @@ defaults:
       type: "guides"
     values:
       layout: "page"
-      author: "Alexandre Oliveira"
       social: true
+
+author: Xinayder
 
 collections:
   guides:
