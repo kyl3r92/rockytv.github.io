@@ -61,6 +61,17 @@ disqus: rockytv
 piwik: true
 repository: RockyTV/rockytv.github.io
 
+theme_color: "#212121"
+background_color: "#e5e5e5"
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->", "<!--", "-->", ""]
+  endings: all
+  profile: false
+  blanklines: false
+  startings: all
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap
