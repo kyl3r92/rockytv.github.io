@@ -3,7 +3,7 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "{{ site.title }}",
+  "name": "{{ site.description }}",
   "short_name": "{{ site.title }}",
   "icons": [
     {
