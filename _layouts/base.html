@@ -18,6 +18,13 @@ layout: compress
     $(".button-collapse").sideNav();
     $("img:not([responsive-img])").addClass("responsive-img");
   </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+                .register('/static/js/sw.js')
+                .then(function() { console.log("Service worker registered"); });
+    }
+  </script>
 </body>
 
 </html>
