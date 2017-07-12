@@ -22,7 +22,7 @@ layout: compress
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                 .register('/static/js/sw.js')
-                .then(function() { console.log("Service worker registered"); });
+                .then(function() { console.debug("Service worker registered"); });
     }
   </script>
 </body>
