@@ -16,7 +16,7 @@ $('form').submit (evt) ->
             username = item.value
 
             if username 
-                $.getJSON("https://api.github.com/search/issues?q=created:2017-09-30T00:00:00-12:00..2017-10-31T23:59:59-12:00+type:pr+is:public+author:#{username}")
+                $.getJSON("https://api.github.com/search/issues?q=created:2018-09-30T00:00:00-12:00..2018-10-31T23:59:59-12:00+type:pr+is:public+author:#{username}")
                     .done (json) ->
                         pr_count = json.total_count
                         for json_item in json.items
