@@ -1,0 +1,8 @@
+@font-face {
+  font-family: emoji;
+
+  src: url('../fonts/twemoji.ttf') format('truetype');
+
+  /* Emoji unicode blocks */
+  unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
+}
