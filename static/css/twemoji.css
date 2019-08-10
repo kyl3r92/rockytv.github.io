@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Twemoji';
+  font-family: 'Twemoji', emoji;
 
   src: url('../fonts/twemoji.ttf') format('truetype');
 
